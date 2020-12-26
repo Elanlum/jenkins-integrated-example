@@ -4,17 +4,13 @@ pipeline {
     stages {
         stage ('Build') {
           steps {
-            script {
-              sh 'gradle clean build'
-            }
+            sh 'gradle clean build'
           }
         }
 
         stage ('Test') {
           steps {
-            script {
-              sh 'gradle clean test'
-            }
+            sh 'gradle clean test'
           }
         }
     }
