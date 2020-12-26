@@ -4,14 +4,18 @@ pipeline {
     stages {
         stage ('Build') {
           steps {
-            gradle('clean', 'build')
+            gradlew('clean', 'build')
           }
         }
 
         stage ('Test') {
           steps {
-            gradle('clean', 'test')
+            gradlew('clean', 'test')
           }
         }
     }
+}
+
+def gradlew(String... args) {
+    sh "./gradlew ${args.join(' ')} -s"
 }
