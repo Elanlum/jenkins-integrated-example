@@ -3,11 +3,19 @@ pipeline {
 
     stages {
         stage ('Build') {
-            sh '/gradelew clean build'
+          steps {
+            script {
+              sh '/gradelew clean build'
+            }
+          }
         }
 
         stage ('Test') {
-            sh '/gradelew clean test'
+          steps {
+            script {
+              sh '/gradelew clean test'
+            }
+          }
         }
     }
 }
