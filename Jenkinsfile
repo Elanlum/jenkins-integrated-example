@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage ('Build') {
           steps {
-            gradlew('clean', 'build')
+            gradle('clean', 'build')
           }
         }
 
         stage ('Test') {
           steps {
-            gradlew('clean', 'test')
+            gradle('clean', 'test')
           }
         }
     }
