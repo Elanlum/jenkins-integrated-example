@@ -5,7 +5,7 @@ pipeline {
         stage ('Build') {
           steps {
             script {
-              sh '/gradelew clean build'
+              sh 'gradle clean build'
             }
           }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage ('Test') {
           steps {
             script {
-              sh '/gradelew clean test'
+              sh 'gradle clean test'
             }
           }
         }
