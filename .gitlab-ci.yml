@@ -11,4 +11,4 @@
     script: gradle clean test
 
   default:
-    image: java:11-jdk
+    image: gradle:alpine
