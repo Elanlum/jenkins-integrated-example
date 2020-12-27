@@ -1,8 +1,12 @@
   build:
+    tags:
+     - ci
     stage: build
     script: gradle clean build
 
   test:
+    tags:
+     - ci
     stage: test
     script: gradle clean test
 
