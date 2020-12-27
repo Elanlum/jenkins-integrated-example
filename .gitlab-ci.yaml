@@ -1,0 +1,16 @@
+example-job:
+
+  tags:
+    - ci
+
+  stages:
+    - build
+    - test
+
+  build:
+    stage: build
+    script: gradle clean build
+
+  test:
+    stage: test
+    script: gradle clean test
