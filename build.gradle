@@ -6,7 +6,6 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
@@ -16,7 +15,7 @@ configurations {
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(14)
+		languageVersion = JavaLanguageVersion.of(11)
 	}
 }
 
