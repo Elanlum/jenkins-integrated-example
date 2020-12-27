@@ -11,4 +11,4 @@
     script: gradle clean test
 
   default:
-    image: gradle:alpine
+    image: gradle:6.7.1
