@@ -8,12 +8,6 @@ public class TestController {
 
     @GetMapping
     public String get() {
-        String a = "aaa";
-        method(a);
         return "Pong!";
-    }
-
-    private void method(String s) {
-        System.out.println(s);
     }
 }
